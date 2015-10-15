@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'net/ftp'
 require 'thread'
 require_relative 'file_extend'
