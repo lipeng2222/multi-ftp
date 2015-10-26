@@ -1,7 +1,7 @@
 # multi-ftp
 
 ## Description
-ruby标准库ftp类扩展的多线程ftp
+ruby标准库ftp类扩展的多线程ftp。
 学习编程刚刚入门，发个小程序，希望大家不吝指教！
 现有问题：
 * 只有多线程下载，上传功能还没弄
