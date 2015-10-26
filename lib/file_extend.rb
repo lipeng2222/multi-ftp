@@ -10,6 +10,8 @@ class File
     
     to_f.close
     from_f.close
-    warn "syswrite size : #{count}" if $DEBUG
+    if $DEBUG
+      warn "syswrite size : #{count}" 
+    end
   end
 end
