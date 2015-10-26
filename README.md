@@ -1,4 +1,4 @@
-# multi-ftp
+# multi-ftp[![Coverage Status](https://coveralls.io/repos/lipeng2222/multi-ftp/badge.svg?branch=master&service=github)](https://coveralls.io/github/lipeng2222/multi-ftp?branch=master)
 
 ## Description
 ruby标准库ftp类扩展的多线程ftp
