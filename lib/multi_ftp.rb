@@ -43,7 +43,7 @@ class MultiFTP < Net::FTP
   
   # 返回350成功代码，说明支持rest，就可实现多线程下载
   def rest_support?
-    unless @logged_in
+    if!(@logged_in)
       connect(@host, @port)
       login(@user, @passwd)
     end
