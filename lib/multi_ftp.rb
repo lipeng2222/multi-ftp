@@ -105,7 +105,9 @@ class MultiFTP < Net::FTP
             f.write(data)
             count += data.size
             yield(data) if block_given?
-            break if count >= part_size
+           if count >= part_size
+             break
+           end
           end
         ensure
           ftp.close
