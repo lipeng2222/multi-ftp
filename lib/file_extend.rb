@@ -12,6 +12,6 @@ class File
     from_f.close
     if $DEBUG
       warn "syswrite size : #{count}" 
-    end
+    
   end
 end
