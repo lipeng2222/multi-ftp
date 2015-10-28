@@ -35,7 +35,7 @@ class MultiFTP < Net::FTP
     @passive = true
     if host
       connect(@host, @port)
-      if user then
+      if user 
         login(@user, @passwd);end
     end
   end
@@ -47,7 +47,7 @@ class MultiFTP < Net::FTP
       login(@user, @passwd)
     end
     
-    resp = sendcmd("REST 0")
+    resp=sendcmd "REST 0"
     resp[/^350 /] ? true : false
   end
   
