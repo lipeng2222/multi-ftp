@@ -48,7 +48,7 @@ class MultiFTP < Net::FTP
       login(@user, @passwd)
     end
     
-    resp = sendcmd("REST 0")
+    resp=sendcmd "REST 0"
     resp[/^350 /] ? true : false
   end
   
