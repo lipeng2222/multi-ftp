@@ -35,9 +35,8 @@ class MultiFTP < Net::FTP
     @passive = true
     if host
       connect(@host, @port)
-      if user
-        login(@user, @passwd)
-      end
+      if user then
+        login(@user, @passwd);end
     end
   end
   
